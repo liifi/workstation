@@ -2,6 +2,11 @@
 
 Generic windows workstation setup. Leverages **scoop** which is a Dependency manager for almost any sort of binary/tool used during development cycle. Use it instead of downloading items from websites and configuring environmental variables. Find configurations for popular tools with ```scoop list liifi-``` after following the **Prerequesites**.
 
+> **NOTE:** If you want to test it without adding anything to your machine, use [Windows Sandbox](https://techcommunity.microsoft.com/t5/Windows-Kernel-Internals/Windows-Sandbox/ba-p/301849). Run the following from an elevated terminal
+> ```
+> Enable-WindowsOptionalFeature -FeatureName "Containers-DisposableClientVM" -All -Online
+> ```
+
 ### Prerequesites
 
 - On **powershell** run the following
@@ -52,7 +57,8 @@ Generic windows workstation setup. Leverages **scoop** which is a Dependency man
 Starting - K3S wsl image is not set to start by default, you must use:
 ```powershell
 wsl -d liifi-k3s
-k3s server &
+k3s server > /dev/null 2>&1 &
+# k3s server --no-deploy traefik > /dev/null 2>&1 &
 exit
 ```
 

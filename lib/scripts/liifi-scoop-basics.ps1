@@ -93,7 +93,7 @@ sudo concfg import vs-code-dark-plus -n
 concfg tokencolor enable -n
 
 Write-Host -NoNewline "Highly suggested. Run some of these ";
-Write-Host "specially liifi-console, liifi-ssh-git and liifi-vscode" -ForegroundColor Yellow;
+Write-Host "specially liifi-tools-docker, liifi-ssh-git and liifi-vscode" -ForegroundColor Yellow;
 Write-Host "Running: scoop list liifi-"
 scoop list liifi-
 

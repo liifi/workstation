@@ -35,7 +35,7 @@ $content += @"
 if [ ! -d "/sys/fs/cgroup/systemd" ]; then
   mkdir /sys/fs/cgroup/systemd
   mount -t cgroup -o none,name=systemd cgroup /sys/fs/cgroup/systemd
-  # k3s server > /dev/null 2>&1 &;
+  # k3s server > /dev/null 2>&1 &
 fi
 "@
 
@@ -67,7 +67,7 @@ Write-Host "Done. Follow these steps." -ForegroundColor Yellow
 Write-Host @'
 # Start k3s (use k3s server --no-deploy traefik if installing rio"):
 wsl -d liifi-k3s;
-k3s server > /dev/null 2>&1 &;
+k3s server > /dev/null 2>&1 &
 exit;
 
 # To connect from windows use:

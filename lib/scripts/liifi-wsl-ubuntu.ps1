@@ -34,11 +34,11 @@ $name = "liifi-ubuntu"
 Set-Content $dir/profile.ps1 $profileContent
 Set-Content $dir/Dockerfile $dockerfileContent
 
-Push-Location $dir
+$null = Push-Location $dir
 
 Write-Host "Building Container" -ForegroundColor Yellow
 $null = docker rm -f $name
-docker build "$PSScriptRoot" --tag $name
+docker build . --tag $name
 docker run --name $name $name
 docker export --output "$($name).tar" $name
 $null = docker rm -f $name
@@ -46,10 +46,10 @@ $null = docker rm -f $name
 Write-Host "Importing container as a wsl distro" -ForegroundColor Yellow
 wsl --unregister $name
 $location = "${env:LOCALAPPDATA}/Linux/$name"
-New-Item -Force -ItemType Directory "${env:LOCALAPPDATA}/Linux/$name"
+$null = New-Item -Force -ItemType Directory "${env:LOCALAPPDATA}/Linux/$name"
 wsl.exe --import $name "${env:LOCALAPPDATA}/Linux/$name" "$($name).tar"
 wsl -s $name
 wsl -l -v
 
-Pop-Location
+$null = Pop-Location
 Remove-Item -Recurse -Force $dir

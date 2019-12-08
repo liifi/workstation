@@ -41,6 +41,7 @@ scoop install grep sed time ln gitignore touch vim
 scoop install vimtutor say shasum
 scoop install jq
 scoop install less
+scoop install dos2unix
 
 # Install git if not here yet
 $null = get-command git -ErrorAction SilentlyContinue -ErrorVariable ProcessError

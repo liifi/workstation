@@ -13,15 +13,17 @@
                     "liifi-myhome",
                     "liifi-prompt-basic",
                     "liifi-prompt-git",
+                    "liifi-ssh-agent",
                     "liifi-ssh-git",
                     "liifi-ssh-id-add",
                     "liifi-ssh-id-create",
+                    "liifi-ssh-server",
                     "liifi-tools-k8s",
                     "liifi-tools-rancher",
                     "liifi-vscode",
                     "liifi-wsl-k3s",
                     "liifi-wsl-ubuntu"
                 ],
-    "version":  "2019-12-08-02-43",
+    "version":  "2019-12-08-07-44",
     "hash":  "67CF24E3E9C1610383E5BA7CC1A9695EC249799E252E61182B53672E6D192AC1"
 }

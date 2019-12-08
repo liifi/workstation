@@ -1,0 +1,9 @@
+{
+    "homepage":  "https://github.com/liifi/workstation",
+    "url":  "https://raw.githubusercontent.com/liifi/workstation/a362e9e/lib/scripts/liifi-ssh-agent.ps1",
+    "bin":  [
+                "liifi-ssh-agent.ps1"
+            ],
+    "version":  "2019-12-08-07-44",
+    "hash":  "25BF18667A4CFEFCB73B1E17A87DD3045EDF2F9950130938704BE4D1041E7B22"
+}

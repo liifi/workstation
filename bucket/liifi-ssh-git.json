@@ -1,9 +1,9 @@
 {
     "homepage":  "https://github.com/liifi/workstation",
-    "url":  "https://raw.githubusercontent.com/liifi/workstation/64a3ece/lib/scripts/liifi-ssh-git.ps1",
+    "url":  "https://raw.githubusercontent.com/liifi/workstation/a362e9e/lib/scripts/liifi-ssh-git.ps1",
     "bin":  [
                 "liifi-ssh-git.ps1"
             ],
-    "version":  "2019-12-08-01-32",
-    "hash":  "921F76709E69929EEF9C288DEECD2DF7D2C92DFF01C0DEA4D3AB3953CF12D02B"
+    "version":  "2019-12-08-07-44",
+    "hash":  "AED8C7D07EF24D5631B8AE6DE5CAFC15B27B85A93F161B1CB7F31767914968D1"
 }

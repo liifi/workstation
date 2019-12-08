@@ -1,0 +1,9 @@
+{
+    "homepage":  "https://github.com/liifi/workstation",
+    "url":  "https://raw.githubusercontent.com/liifi/workstation/9fec6fd/lib/scripts/liifi-git-defaults.ps1",
+    "bin":  [
+                "liifi-git-defaults.ps1"
+            ],
+    "version":  "2019-12-08-02-43",
+    "hash":  "C83958067C8EFC8A97CE287ABC6600BCF62D0E6574DE60209D5BECDF0DA58908"
+}

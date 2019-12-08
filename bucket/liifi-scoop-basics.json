@@ -8,6 +8,7 @@
                     "liifi-corpca",
                     "liifi-edit-bucket",
                     "liifi-edit-hosts",
+                    "liifi-git-defaults",
                     "liifi-hyperv",
                     "liifi-myhome",
                     "liifi-prompt-basic",
@@ -21,6 +22,6 @@
                     "liifi-wsl-k3s",
                     "liifi-wsl-ubuntu"
                 ],
-    "version":  "2019-12-08-02-28",
+    "version":  "2019-12-08-02-43",
     "hash":  "67CF24E3E9C1610383E5BA7CC1A9695EC249799E252E61182B53672E6D192AC1"
 }

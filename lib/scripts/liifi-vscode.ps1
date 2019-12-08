@@ -5,7 +5,10 @@ $userDataDir = "$env:APPDATA\Code\User\"
 $userSettings = "$userDataDir\settings.json"
 $extensions = @(
   'editorconfig.editorconfig',
-  'vscjava.vscode-java-pack'
+  'ms-vscode-remote.vscode-remote-extensionpack',
+  'ms-azuretools.vscode-docker',
+  'ms-kubernetes-tools.vscode-kubernetes-tools'
+  # 'vscjava.vscode-java-pack',
 ) 
 # 'vscjava.vscode-java-debug','vscjava.vscode-java-test','vscjava.vscode-maven'
 # Write-Host "If the following fails due to certificate issue, add the following : $userSettings, then run this conf again. Do not forget to set it to true after done"

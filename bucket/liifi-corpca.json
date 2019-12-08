@@ -1,0 +1,9 @@
+{
+    "homepage":  "https://github.com/liifi/workstation",
+    "url":  "https://raw.githubusercontent.com/liifi/workstation/64a3ece/lib/scripts/liifi-corpca.ps1",
+    "bin":  [
+                "liifi-corpca.ps1"
+            ],
+    "version":  "2019-12-08-01-32",
+    "hash":  "7ABE438B1A0257B98ABB3C1428253B10BA1100E128A2BEFC8F6A5C8DD3C3FCEF"
+}

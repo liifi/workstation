@@ -1,0 +1,9 @@
+{
+    "homepage":  "https://github.com/liifi/workstation",
+    "url":  "https://raw.githubusercontent.com/liifi/workstation/64a3ece/lib/scripts/liifi-myhome.ps1",
+    "bin":  [
+                "liifi-myhome.ps1"
+            ],
+    "version":  "2019-12-08-01-32",
+    "hash":  "BCCC0F01F9EBCA04268A47DCD69EA04F7D1944F89A8FA2EDFBED5B1CA7358453"
+}

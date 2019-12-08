@@ -1,0 +1,9 @@
+{
+    "homepage":  "https://github.com/liifi/workstation",
+    "url":  "https://raw.githubusercontent.com/liifi/workstation/64a3ece/lib/scripts/liifi-ssh-id-create.ps1",
+    "bin":  [
+                "liifi-ssh-id-create.ps1"
+            ],
+    "version":  "2019-12-08-01-32",
+    "hash":  "8418E00D8A9D834BE9144D80A096155863F9D92FBE9F33AAAAFC72822FB342C6"
+}

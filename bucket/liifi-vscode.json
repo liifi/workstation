@@ -1,0 +1,9 @@
+{
+    "homepage":  "https://github.com/liifi/workstation",
+    "url":  "https://raw.githubusercontent.com/liifi/workstation/64a3ece/lib/scripts/liifi-vscode.ps1",
+    "bin":  [
+                "liifi-vscode.ps1"
+            ],
+    "version":  "2019-12-08-01-32",
+    "hash":  "BB75323D9B330924A343574CC091DAAEBF3621B733FDF2D9ECE09F76FD3F9B4E"
+}

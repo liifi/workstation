@@ -1,0 +1,9 @@
+{
+    "homepage":  "https://github.com/liifi/workstation",
+    "url":  "https://raw.githubusercontent.com/liifi/workstation/64a3ece/lib/scripts/liifi-hyperv.ps1",
+    "bin":  [
+                "liifi-hyperv.ps1"
+            ],
+    "version":  "2019-12-08-01-32",
+    "hash":  "7BB102B6A615E100A021600CF6385B35880459802D22370A18F587730973A880"
+}

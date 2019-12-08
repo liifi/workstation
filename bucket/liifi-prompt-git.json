@@ -1,0 +1,9 @@
+{
+    "homepage":  "https://github.com/liifi/workstation",
+    "url":  "https://raw.githubusercontent.com/liifi/workstation/64a3ece/lib/scripts/liifi-prompt-git.ps1",
+    "bin":  [
+                "liifi-prompt-git.ps1"
+            ],
+    "version":  "2019-12-08-01-32",
+    "hash":  "E04B04733271A66C967F2978AB294EE1A5E3D74088B1A00E026935CA0BC73692"
+}

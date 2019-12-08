@@ -1,0 +1,9 @@
+{
+    "homepage":  "https://github.com/liifi/workstation",
+    "url":  "https://raw.githubusercontent.com/liifi/workstation/64a3ece/lib/scripts/liifi-scoop-basics.ps1",
+    "bin":  [
+                "liifi-scoop-basics.ps1"
+            ],
+    "version":  "2019-12-08-01-32",
+    "hash":  "67CF24E3E9C1610383E5BA7CC1A9695EC249799E252E61182B53672E6D192AC1"
+}

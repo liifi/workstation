@@ -60,7 +60,7 @@ wsl -l -v
 $null = Pop-Location
 Remove-Item -Recurse -Force $dir
 
-Write-Host "You can now use k3s. Follow these. wsl -d k3s; k3s server &; exit" -ForegroundColor Yellow
+Write-Host "You can now use k3s. Follow these. wsl -d $name; k3s server &; exit" -ForegroundColor Yellow
 Write-Host "To connect from windows use `$env:KUBECONFIG='//wsl$/$name/etc/rancher/k3s/k3s.yaml'" -ForegroundColor Yellow
 Write-Host "========"
-Write-Host "After starting . Modify '127.0.0.1' to be 'localhost'. Use sc //wsl$/k3s/etc/rancher/k3s/k3s.yaml ((gc -raw //wsl$/k3s/etc/rancher/k3s/k3s.yaml) -replace '127.0.0.1','localhost')" -ForegroundColor Yellow
+Write-Host "After starting . Modify '127.0.0.1' to be 'localhost'. Use sc //wsl$/$name/etc/rancher/k3s/k3s.yaml ((gc -raw //wsl$/$name/etc/rancher/k3s/k3s.yaml) -replace '127.0.0.1','localhost')" -ForegroundColor Yellow

@@ -35,7 +35,7 @@ $content += @"
 if [ ! -d "/sys/fs/cgroup/systemd" ]; then
   mkdir /sys/fs/cgroup/systemd
   mount -t cgroup -o none,name=systemd cgroup /sys/fs/cgroup/systemd
-  # k3s server & > /dev/null
+  # k3s server > /dev/null 2>&1 &;
 fi
 "@
 
@@ -60,7 +60,19 @@ wsl -l -v
 $null = Pop-Location
 Remove-Item -Recurse -Force $dir
 
-Write-Host "You can now use k3s. Follow these. wsl -d $name; k3s server &; exit" -ForegroundColor Yellow
-Write-Host "To connect from windows use `$env:KUBECONFIG='//wsl$/$name/etc/rancher/k3s/k3s.yaml'" -ForegroundColor Yellow
-Write-Host "========"
-Write-Host "After starting . Modify '127.0.0.1' to be 'localhost'. Use sc //wsl$/$name/etc/rancher/k3s/k3s.yaml ((gc -raw //wsl$/$name/etc/rancher/k3s/k3s.yaml) -replace '127.0.0.1','localhost')" -ForegroundColor Yellow
+# ipaddr=$(ifconfig eth0 | grep "inet addr" | cut -d ':' -f 2 | cut -d ' ' -f 1)
+# echo $ipaddr
+
+Write-Host "Done. Follow these steps." -ForegroundColor Yellow
+Write-Host @'
+# Start k3s (use k3s server --no-deploy traefik if installing rio"):
+wsl -d liifi-k3s;
+k3s server > /dev/null 2>&1 &;
+exit;
+
+# To connect from windows use:
+$env:KUBECONFIG='//wsl$/liifi-k3s/etc/rancher/k3s/k3s.yaml'
+
+# Modify '127.0.0.1' to be 'localhost'
+sc //wsl$/liifi-k3s/etc/rancher/k3s/k3s.yaml ((gc -raw //wsl$/liifi-k3s/etc/rancher/k3s/k3s.yaml) -replace '127.0.0.1','localhost')
+'@

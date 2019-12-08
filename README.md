@@ -10,9 +10,18 @@ Generic windows workstation setup. Leverages **scoop** which is a Dependency man
 ### Prerequesites
 
 - On **powershell** run the following
-- **Allow** script execution ```Set-ExecutionPolicy RemoteSigned -scope CurrentUser```
-- (optional) **Corporate CA** run ```iex (new-object net.webclient).downloadstring("https://raw.githubusercontent.com/liifi/workstation/master/lib/scripts/liifi-corpca.ps1")```
-- **Basic Tools** run ```iex (new-object net.webclient).downloadstring("https://raw.githubusercontent.com/liifi/workstation/master/lib/scripts/liifi-scoop-basics.ps1")```
+- **Allow** script execution
+  ```powershell
+  Set-ExecutionPolicy RemoteSigned -scope CurrentUser
+  ```
+- **Corporate CA** run (optional)
+  ```powershell
+  iex (new-object net.webclient).downloadstring("https://raw.githubusercontent.com/liifi/workstation/master/lib/scripts/liifi-corpca.ps1")
+  ```
+- **Basic Tools** run (tools like cat, grep, ps, ls, less and a couple others)
+  ```powershell
+  iex (new-object net.webclient).downloadstring("https://raw.githubusercontent.com/liifi/workstation/master/lib/scripts/liifi-scoop-basics.ps1")
+  ```
 - Done, now you can use ```scoop install``` and ```scoop search```
 
 ### Extra information

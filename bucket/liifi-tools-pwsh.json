@@ -1,0 +1,9 @@
+{
+    "homepage":  "https://github.com/liifi/workstation",
+    "url":  "https://raw.githubusercontent.com/liifi/workstation/03a6cea/lib/scripts/liifi-tools-pwsh.ps1",
+    "bin":  [
+                "liifi-tools-pwsh.ps1"
+            ],
+    "version":  "2019-12-08-07-48",
+    "hash":  "F8E9367CFF79C502FF931BD71915AA104F2F73F970E7B5AE0498BF587078B974"
+}

@@ -7,7 +7,8 @@ $extensions = @(
   'editorconfig.editorconfig',
   'ms-vscode-remote.vscode-remote-extensionpack',
   'ms-azuretools.vscode-docker',
-  'ms-kubernetes-tools.vscode-kubernetes-tools'
+  'ms-kubernetes-tools.vscode-kubernetes-tools',
+  'ms-vscode.powershell'
   # 'vscjava.vscode-java-pack',
 ) 
 # 'vscjava.vscode-java-debug','vscjava.vscode-java-test','vscjava.vscode-maven'

@@ -1,9 +1,9 @@
 {
     "homepage":  "https://github.com/liifi/workstation",
-    "url":  "https://raw.githubusercontent.com/liifi/workstation/f57acb4/lib/scripts/liifi-tools-rancher.ps1",
+    "url":  "https://raw.githubusercontent.com/liifi/workstation/b8e323a/lib/scripts/liifi-tools-rancher.ps1",
     "bin":  [
                 "liifi-tools-rancher.ps1"
             ],
     "version":  "2019-12-08-01-49",
-    "hash":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    "hash":  "A99ED40089A46BBBCF6094D51BA96782B3A1C604415D354791F688AEACBC2C4C"
 }

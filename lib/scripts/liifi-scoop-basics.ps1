@@ -28,9 +28,9 @@ scoop alias rm latest
 scoop alias rm url-liifi
 scoop alias rm update-liifi
 scoop alias rm basics-liifi
-scoop alias add latest 'scoop update; scoop update -f $args[0]'
+scoop alias add latest 'scoop update; scoop update -f --no-cache $args[0]'
 scoop alias add url-liifi "echo '$projectUrl'"
-scoop alias add update-liifi "scoop latest liifi-scoop-basics; get-childitem `"`$(scoop prefix scoop)/../../`" | ?{ `$_.name.startsWith('liifi-'); } | %{scoop update -f `$_.name}"
+scoop alias add update-liifi "scoop latest liifi-scoop-basics; get-childitem `"`$(scoop prefix scoop)/../../`" | ?{ `$_.name.startsWith('liifi-'); } | %{scoop update -f --no-cache `$_.name}"
 scoop alias add basics-liifi "scoop update-liifi; liifi-scoop-basics"
 
 # Install basic scoop utils

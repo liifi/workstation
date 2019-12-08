@@ -1,4 +1,5 @@
-# Helper file
+#!/usr/bin/env pwsh
+
 git add --all
 git commit -m "Processing update revision"
 $revision    = git rev-parse --short HEAD
@@ -10,7 +11,9 @@ if(!($remoteAsIs.startsWith("http"))){
 } else {
   $remote = $remoteAsIs
 }
-$remoteRaw   = $remote -replace ".com",".com/raw"
+$remoteRaw = ""
+if($remote.startsWith('https://github.com')) { $remoteRaw = $remote -replace "github","raw.githubusercontent" }
+else { $remoteRaw = $remote -replace ".com",".com/raw" }
 $remoteParts = $remote.split("/")
 $project     = $remoteParts.Get($remoteParts.Count-1)
 $liifis      = (Get-ChildItem lib/scripts | ?{ $_.name.StartsWith("liifi-"); })

@@ -1,0 +1,1 @@
+  code (resolve-path "$(scoop which scoop)\..\..\..\..\..\buckets\liifi-workstation\");

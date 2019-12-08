@@ -1,9 +1,9 @@
 {
     "homepage":  "https://github.com/liifi/workstation",
-    "url":  "https://raw.githubusercontent.com/liifi/workstation/b9fa07f/lib/scripts/liifi-wsl-ubuntu.ps1",
+    "url":  "https://raw.githubusercontent.com/liifi/workstation/28afaa5/lib/scripts/liifi-wsl-ubuntu.ps1",
     "bin":  [
                 "liifi-wsl-ubuntu.ps1"
             ],
-    "version":  "2019-12-08-02-05",
-    "hash":  "B14D227CEA10F1FD8C0E161F430D67B631E821FE5388A672AC908346B810E00A"
+    "version":  "2019-12-08-02-15",
+    "hash":  "466F6A1A587A5C2D26E82D096DE04E394D7E43BD1A245D57A605F09150F223C9"
 }

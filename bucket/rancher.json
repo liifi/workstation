@@ -8,7 +8,7 @@
             "hash": "42cc7e2a3a710afbf651f03ecab5729bb622631cd0883c77e3dd368323ca1167"
         }
     },
-    "extract_dir": "rancher-v2.2.0",
+    "extract_dir": "rancher-v2.3.2",
     "bin": "rancher.exe",
     "checkver": {
         "github": "https://github.com/rancher/cli"

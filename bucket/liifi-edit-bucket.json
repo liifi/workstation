@@ -1,9 +1,9 @@
 {
     "homepage":  "https://github.com/liifi/workstation",
-    "url":  "https://raw.githubusercontent.com/liifi/workstation/64a3ece/lib/scripts/liifi-edit-bucket.ps1",
+    "url":  "https://raw.githubusercontent.com/liifi/workstation/8419564/lib/scripts/liifi-edit-bucket.ps1",
     "bin":  [
                 "liifi-edit-bucket.ps1"
             ],
-    "version":  "2019-12-08-01-32",
-    "hash":  "35D929F30AB8C5D5AC6F1B8035AA5208907A53B9ADA0B592D2B673F2E2FF824B"
+    "version":  "2019-12-08-07-58",
+    "hash":  "A413F3C2546A66E90AA96D7BF1C89249133AC3712425090822B0DE53DF378360"
 }

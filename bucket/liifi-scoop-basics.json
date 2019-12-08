@@ -15,8 +15,10 @@
                     "liifi-ssh-git",
                     "liifi-ssh-id-add",
                     "liifi-ssh-id-create",
+                    "liifi-tools-k8s",
+                    "liifi-tools-rancher",
                     "liifi-vscode"
                 ],
-    "version":  "2019-12-08-01-33",
+    "version":  "2019-12-08-01-49",
     "hash":  "67CF24E3E9C1610383E5BA7CC1A9695EC249799E252E61182B53672E6D192AC1"
 }

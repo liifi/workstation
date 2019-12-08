@@ -1,0 +1,9 @@
+{
+    "homepage":  "https://github.com/liifi/workstation",
+    "url":  "https://raw.githubusercontent.com/liifi/workstation/f57acb4/lib/scripts/liifi-tools-k8s.ps1",
+    "bin":  [
+                "liifi-tools-k8s.ps1"
+            ],
+    "version":  "2019-12-08-01-49",
+    "hash":  "595ED32391FB644DC686C9326DEF616E18E6AE3FF7A9DC56DC4ECBFA14AC658D"
+}

@@ -1,0 +1,20 @@
+{
+    "homepage": "https://github.com/rancher/rke",
+    "license": "Apache-2.0",
+    "version": "0.1.7-rc5",
+    "url": "https://github.com/rancher/rke/releases/download/v0.1.7-rc5/rke_windows-amd64.exe",
+    "hash": "ad4147e4b284b07787d5cb1be2ac3c469beb2ca5d70e6457afb781c9101efe6a",
+    "checkver": {
+        "url": "https://github.com/rancher/rke/releases/latest",
+        "re": "/releases/tag/(?:v)?([\\d.]+-\\w+)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/rancher/rke/releases/download/$version/rke_windows-amd64.exe",
+        "hash": {
+            "url": "https://github.com/rancher/rke/releases/tag/$version"
+        }
+    },
+    "bin": [
+      ["rke_windows-amd64.exe","rke"]
+    ]
+  }

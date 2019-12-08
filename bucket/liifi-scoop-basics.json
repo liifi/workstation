@@ -4,7 +4,19 @@
     "bin":  [
                 "liifi-scoop-basics.ps1"
             ],
-    "depends": [],
-    "version":  "2019-12-08-01-32",
+    "depends":  [
+                    "liifi-corpca",
+                    "liifi-edit-bucket",
+                    "liifi-edit-hosts",
+                    "liifi-hyperv",
+                    "liifi-myhome",
+                    "liifi-prompt-basic",
+                    "liifi-prompt-git",
+                    "liifi-ssh-git",
+                    "liifi-ssh-id-add",
+                    "liifi-ssh-id-create",
+                    "liifi-vscode"
+                ],
+    "version":  "2019-12-08-01-33",
     "hash":  "67CF24E3E9C1610383E5BA7CC1A9695EC249799E252E61182B53672E6D192AC1"
 }

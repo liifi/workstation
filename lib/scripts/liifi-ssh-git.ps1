@@ -2,7 +2,7 @@ $null = get-command ssh -ErrorAction SilentlyContinue -ErrorVariable ProcessErro
 if(!$ProcessError){
   $env:GIT_SSH = Split-Path (which ssh) -Parent;
   [environment]::setenvironmentvariable('GIT_SSH', $env:GIT_SSH, 'USER');
-  
+
   Write-Host "You already have ssh, remove if desired and run again" -ForegroundColor Yellow
   Write-Host "-- If using windows OpenSSH feature you can disable it with:" -ForegroundColor Yellow
   Write-Host "-- sudo Remove-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0"
@@ -63,3 +63,4 @@ Write-Host "git config --global push.default simple" -ForegroundColor Yellow
 Write-Host "git config --global core.autocrlf false" -ForegroundColor Yellow
 Write-Host "# git config --global core.eol lf" -ForegroundColor Yellow
 Write-Host "==================================================" -foregroundcolor "yellow"
+Write-Host "Your should also run: liifi-prompt-git" -ForegroundColor Yellow

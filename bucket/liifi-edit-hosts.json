@@ -1,9 +1,9 @@
 {
     "homepage":  "https://github.com/liifi/workstation",
-    "url":  "https://raw.githubusercontent.com/liifi/workstation/b25d6c6/lib/scripts/liifi-edit-hosts.ps1",
+    "url":  "https://raw.githubusercontent.com/liifi/workstation/6d44ff5/lib/scripts/liifi-edit-hosts.ps1",
     "bin":  [
                 "liifi-edit-hosts.ps1"
             ],
     "version":  "2019-12-08-08-02",
-    "hash":  "A35DDDCE16B7909480A26CCBB0F2F7B6B3E8435210F163E7F09C0E3513652A30"
+    "hash":  "831601DFDBAA71AF244B7ECFD4B10ECA7A955EC12AEB2F8F16CB356A731DAD40"
 }

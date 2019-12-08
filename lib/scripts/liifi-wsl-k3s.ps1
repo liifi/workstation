@@ -7,16 +7,6 @@ $dockerfileContent = @'
 FROM rancher/k3s:v1.0.0
 '@
 
-$profileContent = @'
-export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/bin/aux
-
-if [ ! -d "/sys/fs/cgroup/systemd" ]; then
-  mkdir /sys/fs/cgroup/systemd
-  mount -t cgroup -o none,name=systemd cgroup /sys/fs/cgroup/systemd
-  # k3s server & > /dev/null
-fi
-'@
-
 function New-TemporaryDirectory {
   $parent = [System.IO.Path]::GetTempPath()
   [string] $name = [System.Guid]::NewGuid()
@@ -27,7 +17,6 @@ function New-TemporaryDirectory {
 $dir = New-TemporaryDirectory
 $name = "liifi-k3s"
 
-Set-Content $dir/profile.ps1 $profileContent
 Set-Content $dir/Dockerfile $dockerfileContent
 
 $null = Push-Location $dir
@@ -38,9 +27,8 @@ docker build . --tag $name
 docker run --name $name $name
 
 Write-Host "Saving environment variables and actions into /etc/profile" -ForegroundColor Yellow
-rm profile.ignore -ErrorAction Ignore
-docker cp "$($name):/etc/profile" profile.ignore
-$content = gc profile.ignore -ErrorAction Ignore
+docker cp "$($name):/etc/profile" profile
+$content = gc profile -ErrorAction Ignore
 $content += docker inspect --format='{{range .Config.Env}}{{printf \"export %s\n\" .}}{{end}}' $name
 # (docker inspect k3s | ConvertFrom-Json).Config.Env | % { $content += "`nexport $_" }
 $content += @"
@@ -52,9 +40,9 @@ fi
 "@
 
 Write-Host "Writting without BOM and modifying any unintended \r\n" -ForegroundColor Yellow
-[IO.File]::WriteAllLines("$(pwd)/profile.ignore",$content, (New-Object System.Text.UTF8Encoding $False))
-docker run --rm -v "$(pwd):/app" busybox dos2unix /app/profile.ignore
-docker cp profile.ignore "$($name):/etc/profile"
+[IO.File]::WriteAllLines("$(pwd)/profile",$content, (New-Object System.Text.UTF8Encoding $False))
+docker run --rm -v "$(pwd):/app" busybox dos2unix /app/profile
+docker cp profile "$($name):/etc/profile"
 
 
 Write-Host "Exporting image" -ForegroundColor Yellow

@@ -1,0 +1,9 @@
+{
+    "homepage":  "https://github.com/liifi/workstation",
+    "url":  "https://raw.githubusercontent.com/liifi/workstation/f80194f/lib/scripts/liifi-tools-docker.ps1",
+    "bin":  [
+                "liifi-tools-docker.ps1"
+            ],
+    "version":  "2019-12-08-05-44",
+    "hash":  "FE0632AAA84AE2733EB76C3BF94723DF9428421D86B9F02F93D3B7240AC7BC02"
+}

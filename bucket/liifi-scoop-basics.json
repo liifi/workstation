@@ -18,6 +18,7 @@
                     "liifi-ssh-id-add",
                     "liifi-ssh-id-create",
                     "liifi-ssh-server",
+                    "liifi-tools-docker",
                     "liifi-tools-k8s",
                     "liifi-tools-pwsh",
                     "liifi-tools-rancher",
@@ -25,6 +26,6 @@
                     "liifi-wsl-k3s",
                     "liifi-wsl-ubuntu"
                 ],
-    "version":  "2019-12-08-07-59",
+    "version":  "2019-12-08-05-44",
     "hash":  "67CF24E3E9C1610383E5BA7CC1A9695EC249799E252E61182B53672E6D192AC1"
 }

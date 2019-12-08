@@ -1,6 +1,6 @@
-﻿{
+{
     "homepage":  "https://github.com/liifi/workstation",
-    "url":  "https://raw.githubusercontent.com/liifi/workstation/35ae2f1/lib/scripts/liifi-scoop-basics.ps1",
+    "url":  "https://raw.githubusercontent.com/liifi/workstation/de9f14b/lib/scripts/liifi-scoop-basics.ps1",
     "bin":  [
                 "liifi-scoop-basics.ps1"
             ],
@@ -26,6 +26,6 @@
                     "liifi-wsl-k3s",
                     "liifi-wsl-ubuntu"
                 ],
-    "version":  "2019-12-08-06-27",
-    "hash":  "9EA2A6C94BA8561F97122775580C95458E04F29F22B0B131B74A1585DA6CF22C"
+    "version":  "2019-12-08-10-57",
+    "hash":  "F2170C7A959DB138A9B591EBD3F20BC302A831F3DFCB89DCE2B2B8550F7E1AFE"
 }

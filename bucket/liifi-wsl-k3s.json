@@ -1,4 +1,4 @@
-﻿{
+{
     "homepage":  "https://github.com/liifi/workstation",
     "url":  "https://raw.githubusercontent.com/liifi/workstation/d47607c/lib/scripts/liifi-wsl-k3s.ps1",
     "bin":  [

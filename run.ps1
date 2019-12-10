@@ -1,5 +1,6 @@
 #!/usr/bin/env pwsh
-$args.splice
+
+Push-Location $PSScriptRoot
 switch ($args[0]) {
   "revision" { . "$PSScriptRoot/lib/scripts/_update-revision.ps1" }
   "update" { ./run.ps1 revision; git push; }
@@ -12,3 +13,4 @@ switch ($args[0]) {
     Write-Host "Usage: ./run.ps1 <revision|update|checkver>" -ForegroundColor Yellow
   }
 }
+Pop-Location

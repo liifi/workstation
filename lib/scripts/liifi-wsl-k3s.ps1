@@ -4,7 +4,7 @@ $PSDefaultParameterValues['*:Encoding'] = 'utf8'
 # wsl --set-default-version 2
 
 $dockerfileContent = @'
-FROM rancher/k3s:v1.0.0
+FROM rancher/k3s:v1.17.0-k3s.2-alpha1-amd64
 '@
 
 function New-TemporaryDirectory {

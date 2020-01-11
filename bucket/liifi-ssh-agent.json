@@ -1,4 +1,4 @@
-{
+﻿{
     "homepage":  "https://github.com/liifi/workstation",
     "url":  "https://raw.githubusercontent.com/liifi/workstation/0a01b54/lib/scripts/liifi-ssh-agent.ps1",
     "bin":  [

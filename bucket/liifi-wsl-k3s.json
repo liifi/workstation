@@ -1,9 +1,9 @@
-{
+﻿{
     "homepage":  "https://github.com/liifi/workstation",
-    "url":  "https://raw.githubusercontent.com/liifi/workstation/d47607c/lib/scripts/liifi-wsl-k3s.ps1",
+    "url":  "https://raw.githubusercontent.com/liifi/workstation/d78659e/lib/scripts/liifi-wsl-k3s.ps1",
     "bin":  [
                 "liifi-wsl-k3s.ps1"
             ],
-    "version":  "2019-12-08-10-06",
-    "hash":  "33D2618E57B1186FF78224F99E2C2C612887170B191E08FC9CB3BA39E8DD8C97"
+    "version":  "2020-01-11-16-31",
+    "hash":  "CAE58BAE7F96EFDF82BDE54F0B6E7CF305103FEB1C0402CC04450B2FFEAACA09"
 }

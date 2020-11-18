@@ -1,0 +1,15 @@
+{
+  "homepage": "https://github.com/vmware-tanzu/buildkit-cli-for-kubectl",
+  "version": "0.1.0",
+  "license": "Apache-2.0",
+  "url": "https://github.com/vmware-tanzu/buildkit-cli-for-kubectl/releases/download/v0.1.0/windows-refs.tags.v0.1.0.tgz",
+  "hash": "6f5fbcf6c2b7774bc10b724007a6cd1b2b0d6ef7aaeb45d54abc5b3c6c08e25a",
+  "env_add_path": ".",
+  "checkver": {
+    "github": "https://github.com/vmware-tanzu/buildkit-cli-for-kubectl"
+  },
+  "post_install": "mv $dir/kubectl-build $dir/kubectl-build.exe; mv $dir/kubectl-buildkit $dir/kubectl-buildkit.exe;",
+  "autoupdate": {
+    "url": "https://github.com/vmware-tanzu/buildkit-cli-for-kubectl/releases/download/v$version/windows-refs.tags.$version.tgz"
+  }
+}

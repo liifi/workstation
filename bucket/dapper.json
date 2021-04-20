@@ -1,14 +1,14 @@
 {
     "homepage": "https://github.com/rancher/dapper",
-    "version": "0.5.3",
+    "version": "0.5.6",
     "license": "Apache-2.0",
-    "url": "https://github.com/rancher/dapper/releases/download/v0.5.3/dapper-windows-x86_64.exe",
-    "hash": "d0a1ce1d19cd8f34de0bc0152a2b51e687a353af52dcb6423288a22dc4fedb65",
+    "url": "https://github.com/rancher/dapper/releases/download/v0.5.6/dapper-windows-x86_64.exe",
+    "hash": "39807ae9355c4075f998b0fe8730bad7546266e4f5f9cdc93adf76c1619220cb",
     "bin": [
-      [
-        "dapper-windows-x86_64.exe",
-        "dapper"
-      ]
+        [
+            "dapper-windows-x86_64.exe",
+            "dapper"
+        ]
     ],
     "checkver": {
         "github": "https://github.com/rancher/dapper"

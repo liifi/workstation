@@ -1,11 +1,11 @@
 {
     "homepage": "https://rancher.com/docs/rancher/v2.x/en/cli/",
     "license": "Apache-2.0",
-    "version": "2.4.9",
+    "version": "2.4.10",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/rancher/cli/releases/download/v2.4.9/rancher-windows-amd64-v2.4.9.zip",
-            "hash": "f6bc1de0a079fc5d358f6ca92a65b36efd0df13e5e43a5b2852028573dffd809"
+            "url": "https://github.com/rancher/cli/releases/download/v2.4.10/rancher-windows-amd64-v2.4.10.zip",
+            "hash": "0be291c0b128d7d61bcf63fe761ce803443e6773d59ca74c6941ed99f82b5ff0"
         }
     },
     "extract_dir": "rancher-v2.3.2",

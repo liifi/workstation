@@ -1,20 +1,20 @@
 {
-  "homepage": "https://github.com/argoproj/argo-workflows",
-  "version": "3.0.2",
-  "license": "Apache-2.0",
-  "url": "https://github.com/argoproj/argo-workflows/releases/download/v3.0.2/argo-windows-amd64.gz",
-  "hash": "77311e34baa19d7a9791a12e924db23093ef22677cf5052d15642e61c53eaa88",
-  "post_install": "mv $dir/argo-windows-amd64 $dir/argo-windows-amd64.exe",
-  "bin": [
-    [
-      "argo-windows-amd64",
-      "argo"
-    ]
-  ],
-  "checkver": {
-    "github": "https://github.com/argoproj/argo-workflows"
-  },
-  "autoupdate": {
-    "url": "https://github.com/argoproj/argo-workflows/releases/download/v$version/argo-windows-amd64.gz"
-  }
+    "homepage": "https://github.com/argoproj/argo-workflows",
+    "version": "3.0.10",
+    "license": "Apache-2.0",
+    "url": "https://github.com/argoproj/argo-workflows/releases/download/v3.0.10/argo-windows-amd64.gz",
+    "hash": "7bc6aa9d24874714ace2e64cefeea23de0a7552945a54428480224e0f9009100",
+    "post_install": "mv $dir/argo-windows-amd64 $dir/argo-windows-amd64.exe",
+    "bin": [
+        [
+            "argo-windows-amd64",
+            "argo"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/argoproj/argo-workflows"
+    },
+    "autoupdate": {
+        "url": "https://github.com/argoproj/argo-workflows/releases/download/v$version/argo-windows-amd64.gz"
+    }
 }

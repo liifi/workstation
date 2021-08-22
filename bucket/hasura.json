@@ -1,11 +1,11 @@
 {
     "homepage": "https://github.com/hasura/graphql-engine",
-    "version": "2.0.0-alpha.8",
+    "version": "2.0.7",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/hasura/graphql-engine/releases/download/v2.0.0-alpha.8/cli-hasura-windows-amd64.exe",
-            "hash": "320cc54b128ca8608c8468e1494fd3299f53aa3dc3410dd8c15f6e63984236da"
+            "url": "https://github.com/hasura/graphql-engine/releases/download/v2.0.7/cli-hasura-windows-amd64.exe",
+            "hash": "557c6216e34657553ea01fda06846d75046c0c526cd7b0b1f7facf825ccdf55b"
         }
     },
     "bin": [

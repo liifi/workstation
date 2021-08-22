@@ -1,9 +1,9 @@
 {
     "homepage": "https://github.com/rancher/k3d",
-    "version": "4.4.2",
+    "version": "4.4.7",
     "license": "Apache-2.0",
-    "url": "https://github.com/rancher/k3d/releases/download/v4.4.2/k3d-windows-amd64.exe",
-    "hash": "5030a266281f72f935d6dc3eac5726a7d8ba74ae46c2a5a4ecce5a303b01c3e4",
+    "url": "https://github.com/rancher/k3d/releases/download/v4.4.7/k3d-windows-amd64.exe",
+    "hash": "130d8dab639f6152e7d3cf7c4144bc31cd52de87c64a2aaa6e2678e1b9041b2a",
     "bin": [
         [
             "k3d-windows-amd64.exe",
